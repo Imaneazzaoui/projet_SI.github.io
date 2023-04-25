@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tableau de bord | Enseignant</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
+      crossorigin="anonymous"
+    />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="navigation">
+        <ul>
+          <li>
+            <img src="logo esi.png" width="250" style="float:left;">
+            <a href="">
+              <div class="icon-header">
+                
+                </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="icon"><i class="fa fa-tachometer" aria-hidden="true"></i
+              ></span>
+              <span class="title"> Tableau de bord</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="icon"
+                ><i class="fa fa-bar-chart" aria-hidden="true"></i
+              ></span>
+              <span class="title">Admissions</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="icon"
+                ><i class="fa fa-users" aria-hidden="true"></i
+              ></span>
+              <span class="title">Stages</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="icon"
+                ><i class="fa fa-users" aria-hidden="true"></i
+              ></span>
+              <span class="title">Bibliothèque</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="icon"
+                ><i class="fa fa-id-badge" aria-hidden="true"></i
+              ></span>
+              <span class="title">Archives</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="icon"
+                ><i class="fa fa-id-badge" aria-hidden="true"></i
+              ></span>
+              <span class="title">Emploi du temps</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="icon"
+                ><i class="fa fa-id-badge" aria-hidden="true"></i
+              ></span>
+              <span class="title">Ressources humaines</span>
+            </a>
+          </li>
+          <h2 class="teams">Teams</h2>
+          <li>
+            <a href="">
+              <span class="icon"
+                ><i class="fa fa-commenting-o" aria-hidden="true"></i
+              ></span>
+              <span class="title">Message <span class="number">9</span></span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="icon"
+                ><i class="fa fa-phone" aria-hidden="true"></i
+              ></span>
+              <span class="title">Convoquer un reunion</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </section>
+
+    <!-- toggle -->
+    <div class="main">
+      <div class="topbar">
+        <div class="toggle" onclick="toggleMenu()"><i class="fa fa-bars" aria-hidden="true"></i></div>
+      </div> 
+      <div class="dashboard">
+        <div class="dashboard-menu">
+          <div class="details">
+            <div class="header">
+              <p>Bonjour , bienvenue à nouveau &#128075</p>
+              <h2>Votre tableau de bord aujourd'hui</h2>
+            </div>
+            <div class="card">
+              <h4>Des publicités créatives en plein air</h4>
+              <div class="dashboard-header">
+                <p>
+                  Bienvenue sur notre tableau de bord ! Ce tableau de bord est conçu pour vous aider à garder une vue d'ensemble sur les
+                  différentes activités et événements qui se déroulent dans notre institution. Vous y trouverez des informations sur les
+                  réunions à venir, les activités récentes et les derniers messages importants. Nous espérons que cette interface
+                  intuitive vous aidera à rester informé et organisé tout au long de l'année.
+                </p>
+                <button class="btn">Get Started</button>
+              </div>
+            </div>
+            <div class="graph">
+              <div class="graph-1">
+                <img class="graph1"
+                  src="./assets/chart1.PNG"
+                  alt="graphical representation"
+                />
+              </div>
+              <div class="graph-2">
+                <img
+                class="graph2"
+                  src="./assets/chart2.PNG"
+                  alt="graphical representation"
+                />
+              </div>
+            <div class="submissions">
+                <div class="document">
+                  <h4>Votre documents</h4>
+                  <table>
+                      <tbody>
+                        
+                          <tr>
+                            <td width="50px">
+                              <i class="fa fa-id-badge" aria-hidden="true"></i>
+                            </td>
+                            <td>
+                              <h4>
+                                Submission NLP Programming <br />
+                                <span>04 Jan, 10:20AM</span>
+                              </h4>
+                            </td>
+                            <td class="document-button">
+                                <button>Submitted</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td width="50px">
+                              <i class="fa fa-id-badge" aria-hidden="true"></i>
+                            </td>
+                            <td>
+                              <h4>
+                                Submission NLP Programming <br />
+                                <span>04 Jan, 10:20AM</span>
+                              </h4>
+                            </td>
+                            <td class="document-button">
+                                <button>Submitted</button>
+                            </td>
+                          </tr>
+                      </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="progress">
+                <h4>Progrès de l'apprentissage</h4>
+                <div class="progress-bar">
+                    <table>
+                        <tbody>
+                          <tr>
+                              <td>
+                                <h5>G1</h5>
+                              </td>
+                              <td>
+                                <h4>
+                                  Groupe 1 <br />
+                                  <span>G1</span>
+                                 <button class="w3-light-yellow"> <button class="w3-yellow"></button></button>
+                                </h4>
+                                
+                              </td>
+                            </tr>
+                            <tr>
+                              <td >
+                                <h5>G2</h5>
+                              </td>
+                              <td>
+                                <h4>
+                                  Groupe 2<br />
+                                  <span class="green">G2</span>
+                                 <button class="w3-light-green"> <button class="w3-green"></button></button>
+                                </h4>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                  <h5>G3</h5>
+                              </td>
+                              <td>
+                                <h4>
+                                  Groupe 3 <br />
+                                  <span class="red">G3</span>
+                                 <button class="w3-light-red"> <button class="w3-red"></button></button>
+                                </h4>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <h5>G4</h5>
+                              </td>
+                              <td>
+                                <h4>
+                                  Groupe 4 <br />
+                                  <span>G4</span>
+                                 <button class="w3-light-yellow"> <button class="w3-yellow"></button></button>
+                                </h4>
+                                
+                              </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-right">
+            <div class="navigation-right">
+              <div class="user">
+                <span><i class="fa fa-bell-o" aria-hidden="true"></i></span>
+                <span><i class="fa fa-cog" aria-hidden="true"></i></span>
+                <span>
+                  <img class="avatar" src="./assets/avatar04.png" alt="user" />
+                </span>
+              </div>
+              <div class="upcoming-section">
+                <h2 class="upcoming">À venir</h2>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td width="50px">
+                        <i class="fa fa-bell" aria-hidden="true"></i>
+                      </td>
+                      <td>
+                        <h4 class="violet-blue">
+                          Rencontre avec OUYACHCHI <br/>
+                          <span>04 Jan, <span class="violet">Due Soon</span></span>
+                        </h4>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="50px">
+                        <i class="fa fa-bell" aria-hidden="true"></i>
+                      </td>
+                      <td>
+                        <h4 class="violet-blue">
+                          Rencontre avec OUYACHCHI <br />
+                          <span
+                            >04 Jan <span class="violet">Due Soon</span>
+                          </span>
+                        </h4>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h2 class="upcoming">Activité récente</h2>
+              <table>
+                <tbody>
+                  <tr>
+                    <td width="50px">
+                      <i class="fa fa-id-badge" aria-hidden="true"></i>
+                    </td>
+                    <td>
+                      <h4>
+                        Soumission de rapport <br />
+                        <span>04 Jan, 10:20AM</span>
+                      </h4>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="50px">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </td>
+                    <td>
+                      <h4>
+                        Gestion des résultats <br />
+                        <span>04 Jan, 10:20AM</span>
+                      </h4>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="50px">
+                      <i class="fa fa-microphone" aria-hidden="true"></i>
+                    </td>
+                    <td>
+                      <h4>
+                        Panel de discussion des enseignants <br />
+                        <span>04 Jan, 10:20AM</span>
+                      </h4>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="50px">
+                      <i class="fa fa-id-badge" aria-hidden="true"></i>
+                    </td>
+                    <td>
+                      <h4>
+                        Structure des données d'envoi <br />
+                        <span>04 Jan, 10:20AM</span>
+                      </h4>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="50px">
+                      <i class="fa fa-id-badge" aria-hidden="true"></i>
+                    </td>
+                    <td>
+                      <h4>
+                        Soumission Module 5 de l'IHM <br />
+                        <span>04 Jan, 10:20AM</span>
+                      </h4>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h2 class="upcoming">Dernier message</h2>
+              <div class="user">
+                <span>
+                  <img class="avatar1" src="./assets/avatar.png" alt="" />
+                </span>
+                <span>
+                  <img class="avatar1" src="./assets/avatar04.png" alt="" />
+                </span>
+                <span>
+                  <img class="avatar1" src="./assets/avatar.png" alt="" />
+                </span>
+                <span>
+                  <img class="avatar1" src="./assets/avatar.png" alt="" />
+                </span>
+                <span>
+                  <img class="avatar1" src="./assets/avatar.png" alt="" />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dashboard  -->
+    <!-- <section class="container-fluid"> -->
+
+      
+    <!-- </section> -->
+    <!-- <div class="container-right">
+      <div class="container-right"></div>
+    </div> -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

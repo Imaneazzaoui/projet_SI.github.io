@@ -1,0 +1,968 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    overflow-x: hidden;
+    background: #e8eff6;
+    font-family: Poppins;
+
+}
+.container
+{
+    position: relative;
+    width: 100%;
+}
+
+
+.navigation
+{
+position: fixed;
+width: 250px;
+height: 100%;
+background: rgb(0, 41, 121);
+transition: 0.5;
+overflow: hidden;
+}
+
+/* testing all here  */
+.container-fluid
+{
+    position: relative;
+    width: calc(100% - 300px);
+    left: 300px;
+    min-height: 100vh;
+    background: #f5f5f5;
+    transition: 0.5s;
+}
+
+/* ends here */
+
+.navigation.active
+{
+    width: 60px;
+}
+
+.icon-header
+{
+    position: relative;
+    justify-content: center;
+    padding: 30px 50px 20px 70px;
+    display: flex;
+    flex-direction: row;
+}
+.icon-header h4
+{
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+.icon-header .fa
+{
+color: #fff;
+   font-size: 17px !important; 
+   /* padding-left: 20px !important; */
+}
+
+.navigation ul
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%; 
+}
+
+.navigation ul li
+{
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+
+.navigation ul li:hover
+{
+    background-image: linear-gradient(to right, rgba(120, 120, 120), rgb(0, 31, 111));
+    border-left: 4px solid #fff;
+}
+
+.navigation ul li:nth-child(1)
+{
+    margin-bottom: 17px;
+}
+
+.navigation ul li:nth-child(1):hover
+{
+    background: transparent ;    
+}
+
+.navigation ul li a
+{
+  position: relative; 
+  display: block;
+  width: 100%;
+  display:flex;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navigation ul li a .icon
+{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 53px;
+    line-height: 40px;
+    text-align: center; 
+}
+
+.navigation ul li a .icon .fa
+{
+   color: #fff;
+   font-size: 24px;  
+}
+.navigation ul li a .title
+{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 53px;
+    line-height: 40px; 
+    white-space: nowrap;
+    font-family: Poppins;
+    font-size: 14px;
+}
+.teams
+{
+    color: #fff;
+    margin: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.number
+{
+    background: red; 
+    border-radius: 50%; 
+    font-size: 10px;
+    padding:3px;
+    margin-left: 70px;
+}
+
+.button-up
+{
+    text-align: center;
+    /* margin-left:70px; */
+    margin-right: 70px;
+}
+.button-up .arrow-up
+{
+    padding: 16px 25px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 14px;
+    cursor: pointer;
+}
+
+.button-up .upgrade-text
+{
+    color: #fff;
+    margin: 7px;
+    font-weight: small !important;
+    margin-top: 28px;
+}
+
+.button-up .upgrade
+{
+    padding:  12px 29px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 17px;
+    cursor: pointer;
+    color: #4778ec;
+    font-weight: 600;
+}
+/* toggle */
+.main
+{
+    position: relative;
+    width: calc(100% - 250px);
+    left: 250px;
+    min-height:100vh;
+    background: #f5f5f5;
+    transition: 0.5s;
+    top: 0;
+}
+
+.main.active
+{
+    width: calc(100% - 60px);
+    left: 60px;
+}
+
+.main .topbar
+{
+    /* width: 100%; */
+    /* background: #fff; */
+    height: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle
+{
+   position: relative;
+   width: 60px;
+   height: 10px;
+   cursor: pointer;
+   margin: 10px;
+   display: none;
+}
+
+.toggle::before
+{
+    /* content: "\f0c9"; */
+    position: absolute;
+    width: 100%;
+    height:100% ;
+    line-height: 60px;
+    font-size: 60px;
+    text-align: center;
+    color: #4778ec;
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+ .dashboard
+{
+  padding-left: 80px;
+} 
+.details{
+    padding-right: 80px;
+}
+
+.dashboard-menu
+{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+.details .header
+{
+    margin-top: 28px;
+}
+
+.details .header p
+{
+    color: #B8B8B8;
+    font-weight: lighter;
+}
+
+.details .header h2
+{
+    /* color: #B8B8B8; */
+    font-weight: 500;
+    margin-top: 7px;
+    margin-bottom: 25px;
+}
+
+/* .dashboard .details
+{
+padding-left: 80px;
+padding-right: 80px;
+} */
+
+.dashboard .details .card
+{
+    position: relative;
+    display: grid;
+    min-height: 200px;
+    background: #4778ec;
+    padding-left: 10px;
+    padding-right: 14px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.card h4
+{
+    margin-top: 35px;
+    font-size: 20px;
+    padding-left: 25px;
+    font-weight: 100;
+}
+
+.card p
+{
+    font-weight: 100 !important;
+    font-size: 15px;
+    line-height: 1.8em;
+}
+
+.dashboard-header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 25px;
+    overflow: hidden;
+}
+
+.btn
+{
+    position: relative;
+    padding: 7px 50px;
+    background: #fff;
+    color:#4778ec;
+    border-radius: 8px;
+    margin-top: 40px;
+    border: none;
+    font-size: 11px;
+}
+
+/* RIGHT */
+.container-right
+{
+  position: relative;
+  height: auto;
+  background: #fff;
+  top: 0;
+}
+
+.navigation-right{
+    margin: 7px;
+}
+
+.graph
+{
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns:3fr 1fr;
+    gap:70px;
+    /* padding-right: 20px; */
+}
+
+.graph1
+{
+    width:100%;
+    /* margin-right: 10px; */
+    height: 230px;
+}
+.graph2{
+    /* width:410px; */
+    width: 100%;
+    height: 230px;
+}
+
+.details .submissions
+{
+    margin-top: 8px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 0fr;
+    /* gap: 70px; */
+}
+
+.submissions .document
+{
+    border: 2px ;
+}
+
+.document tr
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    min-height: 70px;
+    background: #fff;
+    padding: 14px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.document table
+{
+    width: 100%;
+}
+.document tr td
+{
+    margin-right: 20px;
+}
+
+.document .fa
+{
+    color: #8f00ff !important;
+    background: #f3e4ff;
+    padding: 14px;
+    border-radius: 3px;
+}
+.document h4
+{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 15px;
+    /* line-height: 20px; */
+}
+
+.document span
+{
+    color: #999;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 15px;
+}
+
+.document .document-button button
+{
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    margin-left: 300px;
+}
+
+/* progess */
+.progress h4
+{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 5px;
+    line-height: 20px;
+}
+.progress-bar .llipsis{
+    font-size: 15px;
+    float: right;
+}
+.progress .progress-bar
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    min-height: 50px;
+    background: #fff;
+    padding: 14px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.progress-bar h5
+{
+    color: #999;
+    background: #e8eff6;
+    padding: 5px;
+    border-radius: 3px;
+    margin-top: 24px;
+}
+
+.progress .progress-bar h4
+{
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 31px;
+    margin-left: 13px;
+}
+
+.progress-bar span
+{
+    font-size: 9px;
+    color: #999;
+}
+.progress-bar tr td
+{
+    margin-right: 50px;
+}
+.progress-bar span{
+    margin-right: 90px;
+}
+.container-right .fa
+{
+  position: relative; 
+  width: 40px;
+  height: 40px ;
+  border-radius: 5px;
+  overflow: hidden; 
+  background: violet;
+  padding:14px;
+  margin: 10px;
+  color: green;
+}
+
+.container-right table tr:hover
+{
+   background: #4778ec; 
+   color: #fff;
+}
+.container-right table tr td 
+{
+    margin-left: 8px; 
+    margin-right: 8px;   
+}
+
+.container-right table tr td h4
+{
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1em;
+    margin: 10px;
+}
+.container-right table tr span
+{
+    font-size: 9px;
+    margin-top: 10px;
+    color: #999;
+}
+
+.container-right table .fa-id-badge
+{
+    color: #8f00ff !important;
+    background: #f3e4ff;
+}
+
+
+.container-right table .fa-download
+{
+    color: #008e13;
+background: #d4ffda;
+}
+
+.container-right table .fa-microphone
+{
+    color: #008ad8;
+background: #e4faff;
+}
+
+
+.avatar
+{
+    /* width: 30%; */
+    border-radius: 18px;
+    background: #e8eff6;
+    padding:10px;
+    background-color:#e8eff6 ;
+    margin-left: 30px;
+    width: 72px;
+height: 72px;
+left: 1320px;
+top: 29px;
+
+}
+
+.avatar1
+{
+    width: 25%;
+    border-radius: 50%;
+    background: #e8eff6;
+    padding:10px;
+    background-color:#e8eff6 ;
+    margin: 5px;
+}
+.user span .fa
+{
+    background: #fff !important;
+}
+
+.navigation-right .upcoming{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1em;
+    color: #999;
+    margin-top:20px;
+    margin-left: 15px;
+    margin-bottom: 3px;
+}
+
+.violet-blue .violet{
+    color: #ffad47 !important;
+    margin-top: 10px;
+}
+
+.upcoming-section .fa
+{
+    color: #ffad47;
+    background: #ffe4c2;
+}
+
+.upcoming-section h2
+
+.upcoming-section .violet
+{
+    color: #ffad47 !important;
+    /* background: #ffe4c2; */
+}
+
+.upcoming-section .fa
+{
+    color: #ffad47;
+    background: #ffe4c2;
+}
+
+
+
+.w3-light-yellow{
+    background: #FFB200;
+    padding: 3px 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.w3-yellow{
+    background:  #FFF5CC;
+    padding:3px 15px ;
+    border: none;
+    border-radius: 10px;
+}
+
+.w3-light-green{
+    background:  #13C525;
+    padding: 3px 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+.w3-green{
+    background:  #D1FFDB;
+    padding:2px 7px ;
+    border: none;
+    border-radius: 10px;
+}
+
+.w3-light-red{
+    background:  #FF4A4A;
+    padding: 3px 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.w3-red{
+    background:  #FFD7D7;
+    padding:3px 15px ;
+    border: none;
+    border-radius: 10px;
+}
+
+.green
+{
+    margin-right: 70px !important;
+}
+
+.red
+{
+    margin-right: 100px !important;
+}
+
+
+/* RESPONSIVENESS */
+@media (max-width:992px)
+{
+  .navigation{
+     left: -300px; 
+  }  
+  .navigation.active{
+    left: 0px; 
+    width: 300px;
+ } 
+.main{
+    width: 100%;
+    left: 0;
+}
+.main.active{
+    width: calc(100% - 300px);
+    left: 300px; 
+}
+.dashboard
+{
+  padding-left: 20px;
+} 
+
+.dashboard-menu
+{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: min-content ;
+}
+.details{
+    padding-right: 20px;
+}
+
+.toggle
+{
+   position: relative;
+   width: 60px;
+   height: 10px;
+   cursor: pointer;
+   margin: 10px;
+   display: block;
+}
+.card
+{
+    width: 360px;
+    position: relative;
+    display: grid;
+    min-height: 200px;
+    background: #4778ec;
+    padding-left: 10px;
+    padding-right: 14px;
+    border-radius: 10px;
+    color: #fff;
+}
+.btn
+{
+    position: relative;
+    padding: 3px 25px;
+    background: #fff;
+    color:#4778ec;
+    border-radius: 8px;
+    margin-top: 100px;
+    border: none;
+    font-size: 8px;
+    margin-left: 6px;
+}
+.card h4
+{
+    margin-top: 35px;
+    font-size: 20px;
+    padding-left: 25px;
+    font-weight: 100;
+}
+
+.card p
+{
+    font-weight: 100 !important;
+    font-size: 10px;
+    text-align: justify;
+    line-height: 1.8em;
+}
+
+ .graph
+{
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: min-content
+}
+.graph1
+{
+    width:360px;
+    height: 230px;
+}
+.graph2{
+    width:360px;
+    height: 230px;
+}
+
+.details .submissions
+{
+    margin-top: 5px;
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    display: grid;
+    grid-template-columns:min-content;
+}
+
+.document tr
+{
+    position: relative;
+    width: 350px !important;
+    min-height: 50px;
+    background: #fff;
+    padding: 14px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.progress .progress-bar
+{
+    position: relative;
+    width: 360px;
+    min-height: 50px;
+    background: #fff;
+    padding: 14px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.document .document-button button
+{
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    margin-left: 10px;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+}
+.container-right
+{
+  position: relative;
+  height: auto;
+  background: #fff;
+  width: 360px;
+  margin-top: 600px;
+}
+.document h4
+{
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 15px;
+    /* line-height: 20px; */
+}
+}
+
+
+/* @media only screen and (max-width: 768px)  */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+{
+    /* For tablets: */
+    .card
+        {
+            width: 700px;
+            position: relative;
+            display: grid;
+            min-height: 200px;
+            background: #4778ec;
+            padding-left: 10px;
+            padding-right: 14px;
+            border-radius: 10px;
+            color: #fff;
+        }
+        .card h4
+        {
+            margin-top: 35px;
+            font-size: 25px;
+            padding-left: 25px;
+            font-weight: 100;
+        }
+        
+        .card p
+        {
+            font-weight: 100 !important;
+            font-size: 13px;
+            text-align: justify;
+            line-height: 1.8em;
+        }
+        .btn
+        {
+            position: relative;
+            padding: 5px 30px;
+            background: #fff;
+            color:#4778ec;
+            border-radius: 8px;
+            margin-top: 100px;
+            border: none;
+            font-size: 8px;
+            margin-left: 6px;
+            margin-bottom: 8px;
+        }
+        .graph
+        {
+            top: 0px;
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 3fr 0fr
+        }
+        .graph1
+        {
+            width:300px;
+            height: 230px;
+        }
+        .graph2{
+            width:250px;
+            height: 230px;
+        }
+
+        .details .submissions
+        {
+            margin-top: 5px;
+            position: relative;
+            width: 100%;
+            height: 45vh;
+            display: grid;
+            grid-template-columns:2fr 0fr;
+        }
+
+        .document tr
+        {
+            position: relative;
+            width: 300px !important;
+            min-height: 50px;
+            background: #fff;
+            padding: 14px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        .progress .progress-bar
+        {
+            position: relative;
+            width: 300px;
+            min-height: 50px;
+            background: #fff;
+            padding: 14px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        .document .document-button button
+        {
+            border: none;
+            padding: 5px;
+            border-radius: 3px;
+            margin-left: 10px;
+            font-weight: 300;
+            font-size: 10px;
+            line-height: 12px;
+        }
+        .container-right
+        {
+        top: 0;
+        position: relative;
+        background: #fff;
+        width: 100%;
+        }
+
+        .document h4
+        {
+            font-size: 10px;
+            font-weight: 500;
+            line-height: 15px;
+            /* line-height: 20px; */
+        }
+  }
+
+
+@media only screen   
+and (min-width: 1030px)   
+and (max-width: 1366px){
+  i.fa.fa-bars{
+      display: none !important;
+  } 
+}
+
+@media only screen   
+and (min-device-width : 768px)   
+and (max-device-width : 1024px) {
+    i.fa.fa-bars{
+        display: none !important;
+    }
+}
